@@ -35,6 +35,7 @@ Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->whereNumber('i
 
 //Admin
 Route::get('/admin', [\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('adminhome');
+Route::get('/admin', [\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('adminhome');
 
 Route::middleware([
     'auth:sanctum',
